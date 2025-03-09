@@ -72,6 +72,7 @@ or you can combine the two:
 
 ```bash
 osascript -e 'quit app "noTunes"'; defaults delete digital.twisted.noTunes hideIcon
+```
 
 ### Quit noTunes
 
