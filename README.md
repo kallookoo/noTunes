@@ -58,11 +58,20 @@ Right click or control-click the menu bar icon and click `Hide Icon`.
 
 ### Restore Menu Bar Icon
 
-[Quit noTunes](#quit-notunes), run the following command in Terminal and re-open the app:
+Run the following commands in Terminal and open the app:
 
 ```bash
-defaults delete digital.twisted.noTunes
+osascript -e 'quit app "noTunes"'
 ```
+
+```bash
+defaults delete digital.twisted.noTunes hideIcon
+```
+
+or you can combine the two:
+
+```bash
+osascript -e 'quit app "noTunes"'; defaults delete digital.twisted.noTunes hideIcon
 
 ### Quit noTunes
 
